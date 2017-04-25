@@ -1,0 +1,143 @@
+
+.navbar{  
+    width: 100%;  
+    border-bottom: 2rpx solid #777777;  
+    text-align: center;  
+    line-height: 80rpx;
+    }  
+.navbar-item{  font-size: 30rpx;  
+    display: inline-block;  
+    width: 20%;  
+    color: #777777;  
+
+}  
+.navbar-text{
+    display: inline-block;
+    width: 74px;
+}
+.active{ 
+    color: black;  
+    border-bottom: 5rpx solid black;
+    
+    }  
+
+.test-test{
+    overflow: scroll;
+}
+
+
+.section{
+  margin-top: 20px;
+}
+.section-banner{
+    width: 100%;
+    height: 375px;
+}
+.section image{
+  width: 375px;
+  height: 375px;
+}
+.main-title{
+  font-family: "微软雅黑";
+  padding-left: 5px;
+  margin-top: 20px;
+  margin-left: 5px;
+  font-size: 14px;
+  border-left: 2px solid black;
+}
+.main-image{
+  height: 450px;
+  margin-top: 10px;
+}
+.main-label{
+  position: relative;
+}
+.main-label image{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.main-details{
+  /*width: 40px;*/
+  position: absolute;
+  top: 0;
+  left: 60px;
+}
+.main-address{
+  word-break: break-all;
+  font-size: 12px;
+  color:gray;
+  text-align: center;
+}
+.main-details .person-address{
+    width: 15px;
+    height: 15px;
+}
+.main-collection{
+  position: absolute;
+  right: 0;
+  top: 5px;
+  background-color: lightgray;
+  border-radius: 5px;
+  width: 80px;
+  height: 30px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 30px;
+}
+.main-collection image{
+    width: 20px;
+    height: 20px;
+    transform: translate(-5px,6px);
+}
+
+.newwork{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.new-image image{
+    width: 120px;
+    height: 120px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.artist{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.artist-image{
+    position: relative;
+}
+.artist-image image{
+    width: 120px;
+    height: 120px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.artist-describe{
+    width: 120px;
+    height: 60px;
+    position: absolute;
+    top: 65px;
+    left: 5px;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.5);
+}
+.artist-text1{
+    font-size: 18px;
+    margin-left: 5px;
+}
+.artist-text2{
+    font-size: 12px;
+    margin-left: 5px;
+}
+

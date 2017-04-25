@@ -1,0 +1,11 @@
+<view class="collection">
+<view class="collection-title">
+    <text>我的收藏</text>
+</view>
+  <view class="collection-for" wx:for="{{image}}">
+    <navigator url="../work-details/work-details?rowId={{item.row_id}}">
+      <image src="http://work.artand.cn/{{item.pic.pid}}!app.c540.webp"></image>
+    </navigator>
+    <view class="collection-fail" bindtap="collectionfail" data-rowid="{{item}}">取消收藏</view>
+  </view>
+</view>

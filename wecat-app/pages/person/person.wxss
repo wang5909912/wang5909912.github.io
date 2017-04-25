@@ -1,0 +1,55 @@
+
+.userinfo{
+    position: relative;
+}
+
+.userinfo image{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 138px;
+    top: 100px;
+}
+.userinfo-nickname{
+    position: absolute;
+    left: 150px;
+    top: 200px;
+}
+.userinfo-avatar{
+    border-radius: 50%;
+}
+
+.button{
+    width: 80px;
+    height: 200px;
+    position: relative;
+    left: 150px;
+    top: 250px;
+}
+.button-login{
+    font-family: "微软雅黑";
+    font-size: 14px;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid gray;
+    background-color: lightgray;
+    color: white;
+    border-radius: 5px;
+}
+.button-wecat{
+    font-family: "微软雅黑";
+    font-size: 14px;
+    width: 80px;
+    height: 30px;
+    margin-top: 10px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+
+
+

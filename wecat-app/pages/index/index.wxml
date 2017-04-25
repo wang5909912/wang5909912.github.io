@@ -1,0 +1,78 @@
+
+<!--<view class="navbar">
+<block wx:for="{{navbar}}" wx:for-index="idx" data-idx="{{idx}}" bindtap="swichNav">
+  <view class="navbar-item {{currentTab==idx ? 'on' : ''}}" data-current="{{item.num}}"  bindtap="swichNav">{{item}}</view>
+ </block>-->
+
+<!--</view>-->
+<view class="navbar">
+  <view class="navbar-item" wx:for="{{navbar}}" wx:for-index="idx" data-idx="{{idx}}" bindtap="swichNav">
+    <text class="navbar-text {{currentNavbar==idx ? 'active' : ''}}">{{item}}</text>
+  </view>
+</view>
+<swiper current="{{currentNavbar}}" class="swiper-box" duration="300" style="height:{{systemInfo.windowHeight}}px" bindchange="bindChange" bindscrolltolower="pullUpLoad">
+  <swiper-item class="test-test">
+    <view class="section">
+      <swiper indicator-dots="true" autoplay="true" class="section-banner">
+        <block wx:for="{{swipers}}">
+          <swiper-item>
+            <image src="{{item.pic}}" style="200px"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+      <view class="main-title">
+        <text>编辑推荐</text>
+      </view>
+      <block wx:for="{{list}}" wx:for-index="idx">
+        <view class="main-image">
+          <image src="{{_api.HOST_WORK+list[idx].pic.pid}}!app.c540.webp" data-row-id="{{list[idx].row_id}}" bindtap="onItemClick"></image>
+          <view class="main-label">
+            <image src="{{_api.HOST_HEAD+item.user.uid}}/180"></image>
+            <view class="main-details">
+              <view>
+                <text>{{item.name}}</text>
+              </view>
+              <view>
+                <image class="person-address" src="../../image/location.png" mode="scaleToFill"></image>
+                <text class="main-address">{{item.user.city}}</text>
+              </view>
+            </view>
+            <view class="main-collection" data-rowid="{{list[idx]}}" bindtap="addlike">
+              <image src="../../image/like.png"></image>{{item.num_liked}}</view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </swiper-item>
+  <swiper-item class="test-test" bindscrolltolower="pullUpLoadLatest">
+    <block wx:for="{{latest_list}}" wx:for-index="idx">
+      <view class="newwork" wx:if="{{idx%3===0}}">
+        <view class="new-image">
+          <image src="{{_api.HOST_WORK+latest_list[idx].pic.pid}}!app.c360.webp" data-row-id="{{latest_list[idx].row_id}}" bindtap="onItemClick" mode="scaleToFill">
+          </image>
+          <image src="{{_api.HOST_WORK+latest_list[idx+1].pic.pid}}!app.c360.webp" class="latest-image" data-row-id="{{latest_list[idx+1].row_id}}" bindtap="onItemClick" mode="scaleToFill">
+          </image>
+          <image src="{{_api.HOST_WORK+latest_list[idx+2].pic.pid}}!app.c360.webp" class="latest-image" data-row-id="{{latest_list[idx+2].row_id}}" bindtap="onItemClick" mode="scaleToFill">
+          </image>
+        </view>
+      </view>
+    </block>
+  </swiper-item>
+  <swiper-item class="test-test">
+    <view class="artist">
+      <view class="artist-image" wx:for="{{wecat}}">
+        <navigator url="../introduce/introduce?id={{item.p_id}}">
+          <image src="{{item.p_avatar}}" mode="scaleToFill"></image>
+          <view class="artist-describe">
+            <view class="artist-text1">
+              <text>{{item.p_name}}</text>
+            </view>
+            <view class="artist-text2">
+              <text>{{item.p_num}}</text>
+            </view>
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </swiper-item>
+</swiper>

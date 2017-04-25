@@ -1,0 +1,36 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/person/person",
+    "pages/work-details/work-details",
+    "pages/introduce/introduce",
+    "pages/collection/collection",
+    "pages/logs/logs"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Artand",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color":"white",
+    "backgroundColor":"black",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "image/bar_home.png",
+      "selectedIconPath": "image/bar_home.png"
+    },
+  
+    {
+       "pagePath": "pages/person/person",
+      "text": "个人",
+      "iconPath": "image/bar_mine.png",
+      "selectedIconPath": "image/bar_mine.png"
+    }
+    ]
+  }
+}

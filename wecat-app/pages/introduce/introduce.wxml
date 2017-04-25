@@ -1,0 +1,13 @@
+<view class="introduce">
+  <image src="{{item.p_avatar}}"></image>
+  <view class="introduce-name">{{item.p_name}}</view>
+  <view class="introduce-work">{{item.p_num}}</view>
+</view>
+
+<view class="introduce-text">
+  <text>代表作</text>
+</view>
+<view class="introduce-image">
+  <!--代表作-->
+  <image src="{{item.p_image}}" mode="aspectFit"></image>
+</view>
