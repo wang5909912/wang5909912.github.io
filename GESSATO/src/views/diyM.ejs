@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="
+            height = [pixel_value | device-height] ,
+            width = [pixel_value | device-width ] ,
+            initial-scale = float_value ,
+            minimum-scale = float_value ,
+            maximum-scale = float_value ,
+            user-scalable = [yes | no] ,
+            target-densitydpi = [dpi_value | device-dpi | high-dpi | medium-dpi | low-dpi]
+        "
+    />
+    <title>DIY定制</title>
+    <!--控制IE最新版本-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--保证网页在移动端正常显示-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../css/DIY.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/DIYstyle.css">
+    <link rel="stylesheet" href="../css/DIYstyle2.css">
+    <link href="../css/base.css" rel="stylesheet" type="text/css">
+    <link href="../css/bootstrapValidator.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/productShow.css"/>
+    <link href="../css/navFooter.css" type="text/css" rel="stylesheet">
+    <!--矢量图标引入-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+    <!--IE兼容html5-->
+    <!==[if It IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body  ondblclick="ocultar_login_sign_up()">
+<div class="diy_nav_header">
+    <%-include("navHeader.ejs")%>
+</div>
+<section class="diy_header">
+    <div id="pay_hei">
+        <div class="test">
+            <span class="bot"></span>
+            <span class="top"></span>
+        </div>
+    </div>
+        <div class="row">
+            <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12 bn_title diy_nav">
+                <div class="row">
+                    <!--两步完成-->
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 diy_navheader">
+                        <div class="row">
+                            <div class="col-lg-1col-md-1 col-sm-1 col-xs-1 diy_two1">
+
+                                <p class="diy_font1">
+                                    两步完成：
+                                </p>
+                            </div>
+                            <div class="col-lg-1col-md-1 col-sm-1 col-xs-1 diy_two2">
+                                <div class="diy_two2_button">
+                                    <p>
+                                        1
+                                    </p>
+                                </div>
+                                <p class="diy_font1">
+                                    在线设计
+                                </p>
+
+                            </div>
+                            <div class="col-lg-1col-md-1 col-sm-1 col-xs-1 diy_two3">
+                                <div class="diy_two3_button">
+                                    <p>
+                                        2
+                                    </p>
+                                </div>
+                                <p class="diy_font1">
+                                    生成订单
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--提示信息-->
+                    <div class="row">
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 diy_navtitle">
+                            <p>
+                                <a >说明：</a>
+                                你可以选择样板间模板，然后根据您的喜好添加素材来设计，或是上传您的实际居住环境上传相应图片来设计.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="diy_main">
+    <div class="container">
+        <div class="row">
+            <!--样板间和素材-->
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 diy_left">
+                <div class="jq22-container">
+                    <div class="tabs">
+                        <input type="radio" id="tab1" name="tab-control" checked>
+                        <input type="radio" id="tab2" name="tab-control">
+                        <ul class="ul">
+                            <li title="Features">
+                                <label for="tab1" >
+                                    <br>
+                                    <span>样板间</span>
+                                </label>
+                            </li>
+                            <li title="Delivery Contents">
+                                <label for="tab2">
+                                    <br>
+                                    <span>家具素材</span>
+                                </label>
+                            </li>
+                        </ul>
+
+                        <div class="slider">
+                            <div class="indicator">
+                            </div>
+                        </div>
+                        <div class="tabs_split">
+                        </div>
+
+                        <div class="content">
+                            <!--样板间-->
+                            <section>
+                                <!--风格-->
+
+
+                                <div class="tabs_split_mleft ">
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="dropdown tabs_split_mleft_button ">
+                                            <select class=" tabs_split_mleft_button  col-lg-12 col-md-12" type="button" id="searchFeng" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                <!--<option>中式</option>-->
+                                                <option>中式</option>
+                                                <option>欧式</option>
+                                                <option>地中海</option>
+                                                <option>美式</option>
+                                                <option>现代</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--功能-->
+                                <div class="tabs_split_mright">
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="dropdown tabs_split_mleft_button ">
+                                            <select class=" tabs_split_mleft_button  col-lg-12 col-md-12" type="button" id="searchGong" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                <!--<option>客厅</option>-->
+                                                <option>客厅</option>
+                                                <option>卧室</option>
+                                                <option>厨房</option>
+                                                <option>饭厅</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div  id="clickMe" onclick="searchUserMultiple()"></div>
+                                <div class="tabs_split">
+                                </div>
+                                <!--具体内容-->
+                                <div class="tabs_split_content">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                                            <table   class="show-1">
+                                            </table>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 split-page">
+                                                <ul class="shop-page">
+                                                    <li id="arrowAfter"><a href="javascript:void(0)" class="arrow" >&#xe62c;</a></li>
+
+                                                    <li><a href="javascript:void(0)" class="arrow"  >&#xe77b;</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <!--家具素材-->
+                            <section>
+                                <!--风格-->
+                                <div class="tabs_split_mleft">
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="dropdown tabs_split_mleft_button ">
+                                            <select class=" tabs_split_mleft_button  col-lg-12 col-md-12" type="button" id="furnitureFeng" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                <!--<option>客厅</option>-->
+                                                <option>客厅</option>
+                                                <option>卧室</option>
+                                                <option>厨房</option>
+                                                <option>其他</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--功能-->
+                                <div class="tabs_split_mright">
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="dropdown tabs_split_mleft_button ">
+                                            <select class=" tabs_split_mleft_button  col-lg-12 col-md-12" type="button" id="furnitureGong" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                <!--<option>沙发</option>-->
+                                                <option>沙发</option>
+                                                <option>灯具</option>
+                                                <option>桌椅</option>
+                                                <option>装饰</option>
+                                                <option>床</option>
+                                                <option>其他</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div  id="clickMe1" onclick="searchFurniture()"></div>
+
+                                <div class="tabs_split">
+                                </div>
+                                <!--具体内容-->
+                                <div class="tabs_split_content">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                                            <table   class="show-2">
+
+                                            </table>
+                                            <div class="col-lg-12 col-md-12 col-sm-12 split-page">
+
+                                                <nav aria-label="...">
+
+                                                    <ul class="shop-page">
+                                                        <li id="arrowAfter"><a href="javascript:void(0)" class="arrow"  onclick="prevPage();">&#xe62c;</a></li>
+
+                                                        <li><a href="javascript:void(0)" class="arrow"  onclick="nextPage();">&#xe77b;</a></li>
+                                                    </ul>
+                                                    <!--<ul class="pager">
+                                                        <li><a class=""  onclick="prevPage();">Previous</a></li>
+                                                        <li><a onclick="nextPage();" >Next</a></li>
+                                                    </ul>-->
+                                                </nav>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--主要画布-->
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+
+            </div>
+            <div class=" diy_middle" id="canvasFather">
+                <!--<img id="imgPreview" src="" alt=""/>-->
+            </div>
+            <!--家具配色和上传图片-->
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-lg--5 diy_right">
+                <div>
+                    <div class="tabs1">
+                        <input type="radio" id="tab3" name="tab-control1" checked>
+                        <input type="radio" id="tab4" name="tab-control1">
+                        <ul class="ul1">
+                            <li title="Features1">
+                                <label for="tab3" >
+                                    <br>
+                                    <span>可选配色</span>
+                                </label>
+                            </li>
+                            <li title="Delivery Contents1">
+                                <label for="tab4">
+                                    <br>
+                                    <span>上传图片</span>
+                                </label>
+                            </li>
+                        </ul>
+
+                        <div class="slider">
+                            <div class="indicator">
+                            </div>
+                        </div>
+                        <div class="tabs_split">
+                        </div>
+
+
+                        <div class="content1">
+                            <!--可选配色-->
+                            <section>
+                                <!--具体内容-->
+                                <div class="tabs_split_content1">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                                            <table   class="show-3">
+                                            </table>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12 split-page1">
+
+                                                <!--清单提交-->
+                                                <button type="button" class="btn btn split-page2_button" data-toggle="modal" data-target="#myModal" onclick="collectionProduct()">下一步</button>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade diy_qindan_notai" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                                    <div class="modal-dialog" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                                <h4 class="modal-title" id="myModalLabel">订单详情</h4>
+                                                            </div>
+                                                            <table class="table table-striped table-hover split-page1_table  show-4 table-responsive"   >
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <!--上传图片-->
+                            <section>
+                                <div class="tabs_split_content1">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12  diy_navtitle1">
+                                            <p>
+                                                <a >说明：</a>
+                                                您可以上传JPG,PNG，SVG等格式的图片。
+                                            </p>
+                                            <div class="col-lg-12 col-md-12 col-sm-12 split-page1">
+                                                <form id="imgForm" enctype="multipart/form-data" method="post">
+                                                    <input type="text" size="20" name="upfile" id="upfile" style="border:1px dotted #ccc; width: 40%;margin:0 0 10% 21%">
+                                                    <input type="button" value="浏览" onclick="path.click()" style="border:1px solid #ccc;background:#fff">
+                                                    <input type="file" id="path" name="myImg" style="display:none" onchange="upfile.value=this.value">
+                                                    <button type="button" class="btn btn split-page1_button" data-toggle="modal" data-target="#myModal" onclick="uploadImg();">+上传图片</button>
+                                                </form>
+                                                <!-- Modal -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div  id="clickMe6" onclick="getPageTotal()"></div>
+</section>
+
+<%-include("footer.ejs")%>
+<script src="../js/jquery-3.1.1.js"></script>
+<script src="../dist/js/bootstrap.js"></script>
+<script src="../dist/js/bootstrapValidator.js"></script>
+<script src="../js/diycanves.js"></script>
+<script src="../js/navFooter.js"></script>
+<script type="text/javascript">
+
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+
+    window.onload=function () {
+
+        getPageTotal();
+        searchFurniture();
+        searchUserMultiple();
+        setInterval(function() {
+            document.getElementById("clickMe").click();
+        }, 500);
+        setInterval(function() {
+            document.getElementById("clickMe1").click();
+        }, 500);
+        setInterval(function() {
+            document.getElementById("clickMe6").click();
+        }, 500);
+    }
+</script>
+<script>
+    let pageTotal;  //总页数有多少
+    let pageNum=1;  //当前在第几页
+
+    /*求得总页数*/
+    function getPageTotal() {
+        var obj = {
+            test: 1,
+            test2: function () {
+                console.log(this);
+            }
+        };
+        obj.test2();
+
+        let furnitureFengSelect = document.getElementById("furnitureFeng");
+        let furnitureGongSelect = document.getElementById("furnitureGong");
+        let furnitureFeng = furnitureFengSelect.options[furnitureFengSelect.selectedIndex].text;
+        let furnitureGong = furnitureGongSelect.options[furnitureGongSelect.selectedIndex].text;
+        if(furnitureFeng=="----"){
+            furnitureFeng="";
+        }
+        /*console.log(furnitureFeng);
+        console.log(furnitureGong);*/
+        /*AJAX请求*/
+
+        let xhr;
+        if (window.XMLHttpRequest) {
+
+            xhr = new XMLHttpRequest();
+        } else if (window.ActiveXObject) {
+
+            xhr = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                console.log(xhr.responseText);
+                pageTotal = xhr.responseText;
+                for (var i = 1; i <= parseInt(pageTotal); i++) {
+                }
+            }
+        };
+        xhr.open("get", "/getPageTotal.do",true);
+        xhr.setRequestHeader("content-type","application/x-www-form-urlencoded");
+        xhr.send("furnitureFeng="+furnitureFeng+"&furnitureGong="+furnitureGong);
+    }
+
+    function nextPage() {
+        pageNum++;
+        if (pageNum > pageTotal) {
+//            alert("这是最后一页了");
+            pageNum--;
+        } else {
+            searchFurniture();
+        }
+    }
+
+    function prevPage() {
+        pageNum--;
+        if (pageNum <= 0) {
+            pageNum = 1;
+        }
+        searchFurniture();
+    }
+</script>
+<script>
+    var  PrdId=new Array();
+    PrdId=[];
+    /*--------------样板间ajax----------------*/
+    function searchUserMultiple(){
+        let studentFengSelect = document.getElementById("searchFeng");
+        let studentGongSelect = document.getElementById("searchGong");
+        let studentFeng = studentFengSelect.options[studentFengSelect.selectedIndex].text;
+        let studentGong = studentGongSelect.options[studentGongSelect.selectedIndex].text;
+        if(studentFeng=="----"){
+            studentFeng="";
+        }
+        let table = document.getElementsByClassName("show-1")[0];
+      /*  console.log(studentFeng);
+        console.log(studentGong);*/
+        /*AJAX请求*/
+        let xhr;
+        if(window.XMLHttpRequest){
+            //DOM
+            xhr = new XMLHttpRequest();
+        }else if(window.ActiveXObject){
+            xhr = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+
+        xhr.onreadystatechange=function(){
+            if(xhr.readyState==4&&xhr.status==200){
+                console.log(xhr.responseText);
+                let data = JSON.parse(xhr.responseText);
+                table.style.display="block";
+                table.innerHTML="<thead><tr>" +
+                    "</tr></thead>";
+                for(let i=0;i<data.length;i++){
+                    table.innerHTML+="<div class='col-lg-5 col-md-5 col-sm-5 tabs_split_content_img diy '>"+
+                        "<img src='../"+data[i].tm_char+"' class='col-lg-12 col-md-12 col-sm-12 col-xs-12 ' onclick='addtwo(this)'> "+"</div>"
+                }
+            }
+        }
+        xhr.open("post","searchTemplateMaterial.do",true);
+        xhr.setRequestHeader("content-type","application/x-www-form-urlencoded");
+        xhr.send("studentFeng="+studentFeng+"&studentGong="+studentGong);
+    }
+    /*--------------产品素材ajax----------------*/
+    function searchFurniture(){
+        let furnitureFengSelect = document.getElementById("furnitureFeng");
+        let furnitureGongSelect = document.getElementById("furnitureGong");
+        let furnitureFeng = furnitureFengSelect.options[furnitureFengSelect.selectedIndex].text;
+        let furnitureGong = furnitureGongSelect.options[furnitureGongSelect.selectedIndex].text;
+        if(furnitureFeng=="----"){
+            furnitureFeng="";
+        }
+        let table = document.getElementsByClassName("show-2")[0];
+
+        console.log(furnitureFeng);
+        console.log(furnitureGong);
+        /*AJAX请求*/
+        let xhr;
+        if(window.XMLHttpRequest){
+            //DOM
+            xhr = new XMLHttpRequest();
+        }else if(window.ActiveXObject){
+            xhr = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+
+        xhr.onreadystatechange=function(){
+            if(xhr.readyState==4&&xhr.status==200){
+                console.log(xhr.responseText);
+                let data = JSON.parse(xhr.responseText);
+                table.style.display="block";
+                table.innerHTML="<thead><tr>" +
+                    "</tr></thead>";
+                for(let i=0;i<data.length;i++){
+                    table.innerHTML+=
+                        "<div class='col-lg-5 col-md-5 col-sm-5 tabs_split_content_img diy'  type='button' data-toggle='tooltip' data-placement='top' title='"+data[i].prd_name+"' id='"+data[i].prd_name+"' onclick='searchColor(this.id)'>"+
+                        "<img src='../"+data[i].prd_char+"' class='col-lg-12 col-md-12 col-sm-12'  onclick='add(this)' > "+
+                        "</div>"
+                }
+            }
+        }
+        xhr.open("post","searchFurniture.do?pageNum="+pageNum+"",true);
+        xhr.setRequestHeader("content-type","application/x-www-form-urlencoded");
+        xhr.send("furnitureFeng="+furnitureFeng+"&furnitureGong="+furnitureGong);
+    }
+    /*--------------配色ajax----------------*/
+    function searchColor(e){
+        let studentColor = e;
+        let table = document.getElementsByClassName("show-3")[0];
+        console.log(studentColor+"握草我颜色呢？");
+        /*/!*AJAX请求*!/*/
+        let xhr;
+        if(window.XMLHttpRequest){
+            //DOM
+            xhr = new XMLHttpRequest();
+        }else if(window.ActiveXObject){
+            xhr = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xhr.onreadystatechange=function(){
+            if(xhr.readyState==4&&xhr.status==200){
+                console.log(xhr.responseText);
+                let data = JSON.parse(xhr.responseText);
+                table.style.display="block";
+                table.innerHTML="<thead><tr>" +
+                    "</tr></thead>";
+                console.log(data+"颜色图片有回来吗？");
+                for(let i=0;i<data.length;i++){
+                    table.innerHTML+="<div class='col-lg-3 col-md-3 col-sm-3 tabs_split_content_img1'>"+
+                        "<img src='../"+data[i].col_url+"'  class='col-lg-12 col-md-12 col-sm-12 col-xs-12 ' name='"+data[i].col_id+"' onclick='searchColorProduct(this.name)' > "+"</div>"
+                    console.log(studentColor);
+                }
+            }
+        }
+        xhr.open("post","searchColor.do",true);
+        xhr.setRequestHeader("content-type","application/x-www-form-urlencoded");
+        xhr.send("studentColor="+studentColor);
+    }
+
+    /*--------------更换产品颜色图片----------------*/
+    function searchColorProduct(e){
+        let studentColorProduct = e;
+       /* console.log(studentColorProduct+"什么哦，没换到颜色图片？");*/
+        /*/!*AJAX请求*!/*/
+        let xhr;
+        if(window.XMLHttpRequest){
+            //DOM
+            xhr = new XMLHttpRequest();
+        }else if(window.ActiveXObject){
+            xhr = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xhr.onreadystatechange=function(){
+            if(xhr.readyState==4&&xhr.status==200){
+                console.log(xhr.responseText);
+                let data = JSON.parse(xhr.responseText);
+                console.log(data[0].prd_char+"111111我真是日了");
+                $('#canvasFather div').attr('id','')
+                $('#canvasFather').append("<div class='cover' id='myImg'><img onmousewheel='return bbimg(this)' src='../"+data[0].prd_char+"' ></div>");
+                $('.cover').append(' <i class="iconfont icon-x remove"  onclick="myRemove(this);" style="cursor:pointer;" >&#xe60c</i>');
+                mydrag();
+                console.log(document.getElementById('myImg').getElementsByTagName('img').src+"到底打印到了没");
+            }
+        }
+        xhr.open("post","searchColorProduct.do",true);
+        xhr.setRequestHeader("content-type","application/x-www-form-urlencoded");
+        xhr.send("studentColorProduct="+studentColorProduct);
+    }
+
+    /*-------------生成订单------------*/
+    function collectionProduct() {
+        var arr1= new Array();
+        arr1=[];
+        var arr;
+        $("#canvasFather img").each(function(){
+            var m=$(this).get(0).src.split("/");
+            let  q="images/"+m[4];
+            arr1.push(q);
+        })
+        arr= arr1.join(",");
+        let table = document.getElementsByClassName("show-4")[0];
+        console.log(arr);
+        /*/!*AJAX请求*!/*/
+        let xhr;
+        if(window.XMLHttpRequest){
+            //DOM
+            xhr = new XMLHttpRequest();
+        }else if(window.ActiveXObject){
+            xhr = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xhr.onreadystatechange=function(){
+            if(xhr.readyState==4&&xhr.status==200){
+                console.log(xhr.responseText);
+                let data = JSON.parse(xhr.responseText);
+                table.style.display="block";
+                /*console.log("订单中有这么多的产品信息"+data);*/
+                table.innerHTML=" <thead > <tr> " +
+                    "<th class='diy_tttr'>序号</th>" +
+                    "<th class='diy_tttr'>产品名称</th> " +
+                    "<th class='diy_tttr'>数量</th> " +
+                    "<th class='diy_tttr'>单价</th> </tr> </thead> ";
+                let product_price=0;
+                PrdId=data;
+                for(let i=0;i<data.length;i++) {
+                    product_price = parseInt(product_price) + parseInt(data[i].prd_money);
+                    table.innerHTML +="<tbody>" +
+                        " <tbody ><tr > <td class='diy_tttr'>" + i + "</td><td class='diy_tttr'>" + data[i].prd_name + "</td><td class='diy_tttr'>1</td> <td class='diy_tttr'>" + data[i].prd_money + "</td> </tr> " +
+                        "</tbody> "
+                }
+                table.innerHTML+="<hr>"+
+                    "<thead > <tr> <td class='diy_tttr2'>总价</td>  <td class='diy_tttr3'>¥"+product_price+"</td>"+
+                    "</tr> </thead>" +
+                    " <div class='modal-footer'>"+
+                   /* "<button type='button' class='btn btn-default'  data-dismiss='modal'>取消</button>"+*/
+                    "<button type='submit' class='btn btn-warning' onclick='addDiyOder(this)' >生成设计</button>"+
+                    "</div>"
+            }
+        }
+        xhr.open("post","collectionProduct.do",true);
+        xhr.setRequestHeader("content-type","application/x-www-form-urlencoded");
+        xhr.send("arr="+arr);
+    }
+
+    //订单信息添加
+    function addDiyOder(obj ){
+        $("#myModal").modal('hide');
+        if(sessionStorage.myTel){
+            var date = new Date();
+            var year = date.getFullYear();
+            var month = date.getMonth()+1;
+            var day = date.getDate();
+            var hour = date.getHours();
+            var minute = date.getMinutes();
+            var second = date.getSeconds();
+            mydate = year+'-'+month+'-'+day;
+            newdate = String(year)+String(month)+String(day)+String(hour)+String(minute)+String(second);
+          /*  console.log(newdate+"这是diy订单表编号");
+            console.log('添加订单');
+            console.log(mydate+"这是diy订单表时间");*/
+            $.ajax({
+                type:'post',
+                url:'addDiyOrder.do',
+                data:{
+                    loginTel:sessionStorage.myTel,
+                    date:mydate,//订单产生时间
+                    /*address:sessionStorage.myAddress,//地址Id*/
+                    number:newdate//订单编号
+                },
+                success:function (data) {
+                    console.log(123);
+                    addOrderGoods(newdate);
+                }
+            })
+        }else{
+            $(obj).parents(".modal").modal('hide');
+            cambiar_login();
+        }
+    }
+
+
+    //添加订单详细表
+    function addOrderGoods(e) {
+        for( var i=0;i<PrdId.length;i++){
+            $.ajax({
+                type:'post',
+                url:'addOrderGoods.do',
+                data:{
+                    prd_id:3,//产品id
+                    prd_number:1,//产品数量
+                    do_id:e//订单编号
+                },
+                success:function (data) {
+                    console.log(11112222);
+                    $(".test").append('<p>成功！跳转到我的设计</p>')
+                    $("#pay_hei").css('display','block');
+                    $("#pay_hei").fadeIn(100);
+                    $(".test").slideDown(500);
+                    setTimeout("location.href='personal'",2400);
+                     /*----------------------------跳转--------------------------------*/
+                }
+
+            })
+        }
+
+    }
+
+
+
+
+
+    /*-----上传图片----*/
+
+    function uploadImg(){
+        /*把form表单弄成formData - 异步上传二进制文件
+         * new FormData(表单节点)*/
+        $.ajax({
+            url:"uploadImg.do",
+            type:"post",
+            data:new FormData($("#imgForm")[0]),
+            /*上传文件
+             * processData:false - 不用对数据进行处理
+             * contentType - false*/
+            processData:false,
+            contentType:false,
+            success:function(data){
+                console.log(data);
+                document.getElementById('canvasFather').style.backgroundImage="url("+data+")";
+                /* $('#imgPreview').attr('src',data);*/
+            }
+        })
+
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<div class="container">
+    <div class="row">
+        <div id="sy_nav" >
+            <div class="col-lg-12  col-md-12 col-sm-12">
+                <div class="row">
+                    <div class="sy_nav_logo   col-lg-3  col-md-3 col-sm-3"   >
+                        <a href="index"><img   src="../images/ltm27.png" alt="logo"></a>
+                    </div>
+                    <ol class="col-lg-9  col-md-9  col-sm-9">
+                        <div class="row">
+                            <li><a href="index">首页</a></li>
+                            <li><a href="diyM">DIY定制</a></li>
+                            <li><a href="product">产品</a></li>
+                            <li><a href="about">关于我们</a></li>
+                            <li>
+                                <a href="product">&#xe714</a>
+                            </li>
+                            <li class="shopping-cart"><a id="cartA">&#xe730</a></li>
+                            <li id="login">
+                                <div class="row cf">
+                                    <div class="three col">
+                                        <div class="hamburger" id="hamburger-4" onClick="cambiar_login()">
+                                            <span class="line" id="line_1"></span>
+                                            <span class="line"></span>
+                                            <span class="line" id="line_3"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="login_name"  onclick="pd_sy_logout_show()">
+
+                                </div>
+                            </li>
+                        </div>
+                    </ol>
+                </div>
+            </div>
+            <div id="sy_logout">
+                <ul>
+                    <li class="sy_has-dropdown">
+                        <div class="triangle_border_up"></div>
+                        <ul class="sy_dropdown">
+                            <li><a href="personal">个人中心</a></li>
+                            <li  id="sy_out_login" onclick="sy_out_login()"><a href="index">退出登录</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="clear"></div>
+<div id="to_top"><span>&#xe6a2</span>回到顶部</div>
+<div id="sy_login" class="container">
+    <div class="cont_back_info ">
+    </div>
+    <div class="cont_forms row" >
+        <div class="cont_form_sign_up" > <a href="#" onClick="ocultar_login_sign_up()" ><i class="material-icons">&#xE5C4;</i></a>
+            <h2>注册</h2>
+            <input  id="phone"  class="input"  type="text"  onblur="checkPhone()" name="sy_User" placeholder="请输入11位的手机号码" />
+            <div id="phone_ts"></div>
+            <input class="input" type="password"  name="sy_Pwd" onblur="checkPwd()"  id="password" placeholder="请输入密码" />
+            <div id="password_ts"></div>
+            <input  name="smscode"  id="smscode" class="input1"  onblur="checkCode()"  type="text"   placeholder="请输入验证码"/>
+            <button type="button"   id="send_num"   onclick="sendMsg()">发送验证码</button>
+            <div id="smscode_ts"></div>
+            <button  class="btn_sign_up" onclick="sy_reg()" type="submit"   >注册</button>
+        </div>
+        <div class="cont_form_login"  > <a href="#" onClick="ocultar_login_sign_up()"  >
+                <i class="material-icons">&#xE5C4;</i></a>
+            <h2>登录</h2>
+            <div  class="col-lg-12">
+                <input class="input"  type="text"  placeholder="请输入11位的手机号码" name="sy_User" id="login_tel" onblur="checktel()" />
+                <div id="login_tel_ts"></div>
+            </div>
+            <div >
+            </div >
+            <div class="col-lg-12">
+                <input class="input" type="password" placeholder="请输入密码" name="sy_Pwd"  onblur="checkloginPwd()" id="login_pwd" />
+                <div id="login_pwd_ts"></div>
+            </div>
+            <button class="btn_login" type="submit" onclick="sy_login()">登录</button>
+            <a  onclick="cambiar_sign_up()">没有帐号，，去注册>></a>
+        </div>
+    </div>
+</div>

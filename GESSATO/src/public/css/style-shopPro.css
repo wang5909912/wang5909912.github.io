@@ -1,0 +1,292 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "微软雅黑";
+}
+.shopProCss header{
+    width: 100%;
+    height: 80px;
+    background: gray;
+}
+.shopProCss{
+    background: none;
+}
+.cart-bg{
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.cart-bg img{
+    width: 100%;
+    height: auto;
+    opacity:0.2;
+}
+.shopProCss p{
+    margin-bottom: 0;
+}
+
+.shopPro-message{
+    margin-left: 14%;
+    margin-top: 5.2%;
+    margin-bottom: 5.2%;
+    width: 72%;
+    /*border: 1px solid black;*/
+}
+.shopPro-address{
+    width: 50%;
+    margin-right: 6%;
+    /*border: 1px solid black;*/
+    float: left;
+}
+.shopPro-info{
+    width: 44%;
+    /*height: 300px;*/
+    float: left;
+    border-left: 1px solid #cecece;
+}
+.shopPro-nav{
+    margin-bottom: 11%;
+    font-size: 1vw;
+    margin-top: 5%;
+}
+.shopPro-nav span a:hover{
+    text-decoration: none;
+    color: #fc6;
+}
+.shopPro-nav span:nth-child(3){
+    color: rgba(0,0,0,0.68);
+}
+.shopProCss h3{
+    font-size: 18px;
+    margin-bottom: 10%;
+}
+/*地址表单*/
+.shopProAddress-select{
+    padding-top: 4.9%;
+    padding-bottom: 1.1%;
+    padding-left: 2.5%;
+    border: solid 1px rgba(0,0,0,0.28);
+    border-radius: 4px;
+    /*box-shadow: 0 0 0 1px rgba(0,0,0,0.15);*/
+    background-color: #fff;
+    color: #333333;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    word-break: normal;
+    appearance:none;
+    outline: none;
+    -webkit-transition: all 0.5s ease-out;
+}
+.shopProAddress-select option{
+    /*padding: 10% 0;*/
+    /*height: 10%;*/
+}
+.shopProInfoDiv,.shopProAddressDiv-add,.shopProNameDiv,.shopProAddress-pre,.shopProNameDiv,.shopProDiv-pre,.shopProDiv{
+    position: relative;
+    margin-bottom: 5%;
+    height: 42px;
+}
+.shopProAddress,.shopProNum,.shopProPhone{
+    color: #999999;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin: 0.9%;
+    padding: 0 2.6%;
+    z-index: 1;
+    /* -webkit-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+     -webkit-transform: translateY(3px);
+     transform: translateY(3px);
+     pointer-events: none;
+     overflow: hidden;
+     white-space: nowrap;
+     text-overflow: ellipsis;
+     box-sizing: border-box;
+     opacity: 0;*/
+}
+/*姓名表单*/
+.shopProInput{
+    outline:0;
+    padding-top: 4.7%;
+    padding-bottom: 1%;
+    padding-left: 3.4%;
+    border: solid 1px rgba(0,0,0,0.28);
+    border-radius: 4px;
+    /*box-shadow: 0 0 0 1px rgba(0,0,0,0.15);*/
+    background-color: #fff;
+    color: #333333;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    -webkit-transition: all 0.5s ease-out;
+}
+/*省市区表单*/
+.shopProAddress-pre{
+    width: 32%;
+    float: left;
+    margin-right: 2%;
+}
+.shopProAddress-pre:last-child{
+    margin-right: 0;
+}
+.shopProAddress-pre .shopProAddress{
+    width: 100%;
+    margin: 1.8%;
+    padding: 0 7.5%;
+}
+.shopProAddress-pre .shopProInput{
+    padding-top: 14.4%;
+    padding-bottom: 3%;
+    padding-left: 6.6%;
+    text-align: right;
+}
+/*电话邮编表单*/
+.shopProDiv-pre{
+    width: 49%;
+    float: left;
+    margin-right: 2%;
+}
+.shopProDiv-pre:last-child{
+    margin-right: 0;
+}
+.shopProDiv-pre .shopProNum,.shopProDiv-pre .shopProPhone{
+    width: 100%;
+    margin: 1.2%;
+    padding: 0 5%;
+}
+.shopProDiv-pre .shopProInput{
+    padding-top: 9.3%;
+    padding-bottom: 1.8%;
+    padding-left: 5.9%;
+}
+.cart-sub{
+    margin-top: 7%;
+}
+.cart-sub p{
+    margin-top: 0;
+    width: 44%;
+}
+.cart-sub p:hover{
+    /*color: #333333;*/
+    cursor: pointer;
+}
+.cart-sub p span{
+    display: inline-block;
+    -webkit-transform: rotate(180deg) scale(1.8);
+    padding-bottom: 2.7%;
+}
+.cart-sub p,.cart-pay{
+    font-size: 14px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-bottom: 20%;
+}
+.cart-pay{
+    float: right;
+    display: inline-block;
+    text-align: center;
+    width: 44%;
+    color: white;
+    background-color: #333333;
+    border: 1px solid #333333;
+    border-radius: 3px;
+}
+.cart-pay:hover{
+    color: #333333;
+    background-color: white;
+    cursor: pointer;
+}
+.shopGoods{
+    margin-left: 11.1%;
+}
+.shopGoods h3{
+    margin-bottom: 13%;
+    margin-top: 10%;
+    font-size: 16px;
+}
+.shopGoods div div{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.shopGoods div div img,.shopGoods div div p{
+    display: inline-block;
+    margin: 12% auto 0;
+}
+.shopGoodsImg img{
+    width: 4.81vw;
+    height: 8.8vh;
+    border: 1px solid silver;
+    border-radius: 3px;
+}
+.shopGoods div div p{
+    padding: 21% 0;
+}
+.shopGoods .shopProInput{
+    padding-top: 2.9%;
+    padding-bottom: 2.8%;
+    padding-left: 3.4%;
+    color: #333333;
+    width: 94%;
+    margin-left: 3%;
+    margin-top: 5%;
+}
+.shopGoods .shopGoodsCountModule{
+    width: 94%;
+    margin-left: 3%;
+    margin-top: 5%;
+    border-top: 1px solid #cecece;
+    border-bottom: 1px solid #cecece;
+}
+.shopGoods .goodsSum{
+    width: 94%;
+    margin-left: 3%;
+    /*margin-top: 5%;*/
+    text-align: left;
+    font-size: 18px;
+}
+.shopGoodsCountModule .goodsCount{
+    display: block;
+    float: none;
+    width: 100%;
+    height: auto;
+    text-align: left;
+}
+.shopGoodsCountModule .goodsCount p,.shopGoods .goodsSum p{
+    display: inline-block;
+    margin-top: 5%;
+    padding: 0;
+    /*float: left;*/
+}
+.shopGoodsCountModule .goodsCount:last-child p:first-child{
+    margin-bottom: 5%;
+}
+.shopGoods .shopPro-attention{
+    margin: 1% 0;
+}
+.shopGoods .goodsSum p{
+    margin: 12% 0;
+}
+.shopGoodsTrans{
+    clear:both;
+}
+.shopGoodsTrans,.shopGoodsCount,.shopGoodsSum{
+    float: right;
+}
+.shopProCss footer{
+    height: 300px;
+    border: 1px solid black;
+}
+/*
+.shopGoodsCountModule .goodsCount p:nth-child(2){
+    float: right;
+    margin-right:0;
+}*/

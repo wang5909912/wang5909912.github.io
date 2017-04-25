@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="
+            height = [pixel_value | device-height] ,
+            width = [pixel_value | device-width ] ,
+            initial-scale = float_value ,
+            minimum-scale = float_value ,
+            maximum-scale = float_value ,
+            user-scalable = [yes | no] ,
+            target-densitydpi = [dpi_value | device-dpi | high-dpi | medium-dpi | low-dpi]
+        "
+    />
+    <title>设计师</title>
+    <!--控制IE最新版本-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--保证网页在移动端正常显示-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../css/DIY.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="../css/bootstrapValidator.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/sjsstylist.css"/>
+    <link href="../css/base.css" rel="stylesheet" type="text/css">
+    <link href="../css/navFooter.css" type="text/css" rel="stylesheet">
+    <!--矢量图标引入-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+    <!--IE兼容html5-->
+    <!==[if It IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body ondblclick="ocultar_login_sign_up()">
+
+<header>
+    <%-include("navHeader.ejs")%>
+</header>
+<!--mian-->
+<section class="sjs_main">
+    <div class="row" id="sjs_liu">
+        <div class="col-lg-6 sjs_one">
+            <h1>
+                GESSATO设计
+            </h1>
+            <p>
+                我们住它。我们呼吸它。它在我们的灵魂。我们从灵感开始，结束创新。我们使日常生活变得美丽和功能。
+            </p>
+        </div>
+    <div class="container">
+        <div class="row">
+            <div id="sjs_all"  class="col-lg-11 sjs_all">
+                <%for(var i=0;i<parseInt(goodsList.length/2);i++){%>
+
+                <div class="sjs_bose">
+                    <div class=" sjs_div1">
+                        <h4>
+                            <%=goodsList[2*i].stylist_name%>
+                        </h4>
+                        <p>
+                            <%=goodsList[2*i].stylist_introduce%>
+                        </p>
+                        <button class="sjs_btn01"><a href="sjswork?id=<%=goodsList[2*i].stylist_id%>&o=<%=goodsList[2*i].stylist_introduce%>&tp=<%=goodsList[2*i].stylist_print%>&nm=<%=goodsList[2*i].stylist_name%>">查看详情</a></button>
+                    </div>
+                    <div class="sjs_book0">
+                        <img src="../images/personal/<%=goodsList[2*i].stylist_print%>" class="sjs_book00"/>
+                    </div>
+                    <div class=" sjs_div2">
+                        <h4>
+                            <%=goodsList[2*i+1].stylist_name%>
+                        </h4>
+                        <p>
+                            <%=goodsList[2*i+1].stylist_introduce%>
+                        </p>
+                        <button class="sjs_btn02"><a href="sjswork?id=<%=goodsList[2*i+1].stylist_id%>&o=<%=goodsList[2*i+1].stylist_introduce%>&tp=<%=goodsList[2*i+1].stylist_print%>&nm=<%=goodsList[2*i+1].stylist_name%>">查看详情</a></button>
+                    </div>
+                    <div class="sjs_book1">
+                        <img src="../images/personal/<%=goodsList[2*i+1].stylist_print%>" class="sjs_book11"/>
+                        </div>
+                    </div>
+                <%}%>
+            </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<%-include("footer.ejs")%>
+<script src="../js/jquery-3.1.1.js"></script>
+<script src="../dist/js/bootstrap.js"></script>
+<script src="../dist/js/bootstrapValidator.js"></script>
+<script src="../js/navFooter.js"></script>
+
+</body>
+</html>

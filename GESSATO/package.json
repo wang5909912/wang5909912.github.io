@@ -1,0 +1,23 @@
+{
+  "name": "day3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app-old.js",
+  "dependencies": {
+    "express": "^3.21.2",
+    "mysql": "^2.13.0"
+  },
+  "devDependencies": {
+    "cookie-parser": "^1.4.3",
+    "distpicker": "^2.0.0-rc",
+    "ejs": "^2.5.6",
+    "express-session": "^1.15.1",
+    "leanengine": "^1.2.4",
+    "less": "^2.7.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

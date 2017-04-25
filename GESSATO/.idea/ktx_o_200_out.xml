@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tour start="node1">
+  <panorama id="node1">
+    <view fovmode="0" pannorth="0">
+      <start pan="0" fov="70" tilt="0"/>
+      <min pan="0" fov="5" tilt="-90"/>
+      <max pan="360" fov="120" tilt="90"/>
+    </view>
+    <userdata title="" datetime="" description="" copyright="" tags="" author="" source="" comment="" info="" longitude="" latitude=""/>
+    <hotspots width="180" height="20" wordwrap="1">
+      <label width="180" backgroundalpha="1" enabled="1" height="20" backgroundcolor="0xffffff" bordercolor="0x000000" border="1" textcolor="0x000000" background="1" borderalpha="1" borderradius="1" wordwrap="1" textalpha="1"/>
+      <polystyle mode="0" backgroundalpha="0.2509803921568627" backgroundcolor="0x0000ff" bordercolor="0x0000ff" borderalpha="1"/>
+      <hotspot title="卧室" target="" pan="4.67765" skinid="skin1" url="{node2}" id="Point01" tilt="0"/>
+    </hotspots>
+    <media/>
+    <input tile0url="../src/public/images/ktx_o_200_oft.jpg" prev5url="../src/public/images/ktx_o_200_o_previewdn.jpg" prev4url="../src/public/images/ktx_o_200_o_previewup.jpg" prev3url="../src/public/images/ktx_o_200_o_previewlf.jpg" prev2url="../src/public/images/ktx_o_200_o_previewbk.jpg" prev1url="../src/public/images/ktx_o_200_o_previewrt.jpg" prev0url="../src/public/images/ktx_o_200_o_previewft.jpg" tile5url="../src/public/images/ktx_o_200_odn.jpg" tilesize="800" tile4url="../src/public/images/ktx_o_200_oup.jpg" tile3url="../src/public/images/ktx_o_200_olf.jpg" tilescale="1.012500" tile2url="../src/public/images/ktx_o_200_obk.jpg" tile1url="../src/public/images/ktx_o_200_ort.jpg">
+      <preview color="0x808080"/>
+    </input>
+    <control simulatemass="1" lockedmouse="0" lockedkeyboard="0" dblclickfullscreen="0" invertwheel="0" lockedwheel="0" invertcontrol="1" speedwheel="1" sensitivity="8"/>
+  </panorama>
+  <panorama id="node2">
+    <view fovmode="0" pannorth="0">
+      <start pan="0" fov="70" tilt="0"/>
+      <min pan="0" fov="5" tilt="-90"/>
+      <max pan="360" fov="120" tilt="90"/>
+    </view>
+    <userdata title="" datetime="" description="" copyright="" tags="" author="" source="" comment="" info="" longitude="" latitude=""/>
+    <hotspots width="180" height="20" wordwrap="1">
+      <label width="180" backgroundalpha="1" enabled="1" height="20" backgroundcolor="0xffffff" bordercolor="0x000000" border="1" textcolor="0x000000" background="1" borderalpha="1" borderradius="1" wordwrap="1" textalpha="1"/>
+      <polystyle mode="0" backgroundalpha="0.2509803921568627" backgroundcolor="0x0000ff" bordercolor="0x0000ff" borderalpha="1"/>
+      <hotspot title="客厅" target="" pan="-104.521" skinid="skin1" url="{node1}" id="Point01" tilt="0.365076"/>
+    </hotspots>
+    <media/>
+    <input tile0url="../src/public/images/wsx_o_200_oft.jpg" prev5url="../src/public/images/wsx_o_200_o_previewdn.jpg" prev4url="../src/public/images/wsx_o_200_o_previewup.jpg" prev3url="../src/public/images/wsx_o_200_o_previewlf.jpg" prev2url="../src/public/images/wsx_o_200_o_previewbk.jpg" prev1url="../src/public/images/wsx_o_200_o_previewrt.jpg" prev0url="../src/public/images/wsx_o_200_o_previewft.jpg" tile5url="../src/public/images/wsx_o_200_odn.jpg" tilesize="800" tile4url="../src/public/images/wsx_o_200_oup.jpg" tile3url="../src/public/images/wsx_o_200_olf.jpg" tilescale="1.012500" tile2url="../src/public/images/wsx_o_200_obk.jpg" tile1url="../src/public/images/wsx_o_200_ort.jpg">
+      <preview color="0x808080"/>
+    </input>
+    <control simulatemass="1" lockedmouse="0" lockedkeyboard="0" dblclickfullscreen="0" invertwheel="0" lockedwheel="0" invertcontrol="1" speedwheel="1" sensitivity="8"/>
+  </panorama>
+</tour>

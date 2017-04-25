@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="
+            height = [pixel_value | device-height] ,
+            width = [pixel_value | device-width ] ,
+            initial-scale = float_value ,
+            minimum-scale = float_value ,
+            maximum-scale = float_value ,
+            user-scalable = [yes | no] ,
+            target-densitydpi = [dpi_value | device-dpi | high-dpi | medium-dpi | low-dpi]
+        "
+    />
+    <title>myCart</title>
+    <link rel="stylesheet" href="../dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrapValidator.css"/>
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../font/font_tj/iconfonttj.css"/>
+    <link rel="stylesheet" href="../css/cart.css"/>
+</head>
+<body>
+
+<div class="cartCss">
+    <!--导航-->
+    <div class="container-fluid cart-bg">
+        <img src="../images/tj-centerBg.jpg" alt=""/>
+    </div>
+    <header class="container-fluid"></header>
+    <section class="container-fluid">
+
+        <div class="row cart-message">
+            <p class="cart-cart">购物车</p>
+            <div class="row cart-first">
+                <p class="col-lg-2 col-md-2 col-sm-2"></p>
+                <p class="col-lg-3 col-md-3 col-sm-3 cart-goodsMessage">商品名称</p>
+                <p class="col-lg-1 col-md-1 col-sm-1 cart-messageEdit">修改参数</p>
+                <p class="col-lg-1 col-md-1 col-sm-1 cart-goodsSale">单价</p>
+                <p class="col-lg-2 col-md-2 col-sm-2 cart-goodsNum">数量</p>
+                <p class="col-lg-1 col-md-1 col-sm-1 cart-goodsCount">金额</p>
+            </div>
+            <!--<div class="col-lg-12 col-md-12 col-sm-12 cart-information">
+                <img src="" alt="" class="col-lg-2 col-md-2 col-sm-2"/>
+                <p class="col-lg-3 col-md-3 col-sm-3 cart-goodsMessage"></p>
+                <p class="col-lg-1 col-md-1 col-sm-1 cart-messageEdit">
+                    <span>修改</span>
+                </p>
+                <p class="col-lg-1 col-md-1 col-sm-1 cart-goodsSale">￥<span></span></p>
+                <p class="col-lg-2 col-md-2 col-sm-2 cart-goodsNum">
+                    <span class="row">
+                        <span class="col-lg-3 col-md-3 col-sm-4 cart-minus"><i class="iconfont icon-minus"></i></span>
+                        <span class="cart-num col-lg-6 col-md-6 col-sm-4" contenteditable="true"></span>
+                        <span class="col-lg-3 col-md-3 col-sm-4 cart-plus"><i class="iconfont icon-plus"></i></span>
+                    </span>
+                </p>
+                <p class="col-lg-1 col-md-1 col-sm-1 cart-goodsCount">￥<span></span></p>
+                <span class="cart-delete" onclick="cartDelete(this)"><i class="iconfont icon-delete"></i></span>
+            </div>-->
+            <!--    <div class="col-lg-12 col-md-12 col-sm-12 cart-information cart-last-info">
+                    <img src="../images/cart-1.jpg" alt="" class="col-lg-2 col-md-2 col-sm-2"/>
+                    <p class="col-lg-3 col-md-3 col-sm-3 cart-goodsMessage">Lorem ipsum dolor sit amet</p>
+                    <p class="col-lg-1 col-md-1 col-sm-1 cart-messageEdit"><span>修改</span></p>
+                    <p class="col-lg-1 col-md-1 col-sm-1 cart-goodsSale">￥<span>9999</span></p>
+                    <p class="col-lg-2 col-md-2 col-sm-2 cart-goodsNum">
+                        <span class="row">
+                            <span class="col-lg-3 col-md-3 col-sm-4"><i class="iconfont icon-minus"></i></span>
+                            <span class="cart-num col-lg-6 col-md-6 col-sm-4" contenteditable="true">1</span>
+                            <span class="col-lg-3 col-md-3 col-sm-4"><i class="iconfont icon-plus"></i></span>
+                        </span>
+                    </p>
+                    <p class="col-lg-1 col-md-1 col-sm-1 cart-goodsCount">￥<span>9999</span></p>
+                    <span class="cart-delete"><i class="iconfont icon-delete"></i></span>
+                </div>-->
+            <div class="col-lg-12 col-md-12 col-sm-12 cart-countDiv">
+                <div class="col-lg-offset-9 col-md-offset-9 col-sm-offset-9 col-lg-3 col-md-3 col-sm-3 cart-count">
+                    <p class="col-lg-5 col-md-5 col-sm-5">合计</p>
+                    <p class="col-lg-6 col-md-6 col-sm-6 cart-countAll"></p>
+                </div>
+            </div>
+            <div class="col-lg-offset-9 col-md-offset-9 col-sm-offset-9 col-lg-3 col-md-3 col-sm-3 cart-sub">
+                <p class="col-lg-5 col-md-5 col-sm-5"><< 继续选购</p>
+                <a href="shoppingProcess.html"><div class="col-lg-6 col-md-6 col-sm-6 cart-pay">结 算</div></a>
+            </div>
+        </div>
+    </section>
+    <footer class="container-fluid"></footer>
+</div>
+
+
+<script src="../js/jquery-3.1.1.js"></script>
+<script src="../js/jquery-1.11.3.js"></script>
+<script src="../dist/js/bootstrap.js"></script>
+<script src="../js/cart.js"></script>
+</body>
+</html>

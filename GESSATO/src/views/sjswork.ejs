@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="
+            height = [pixel_value | device-height] ,
+            width = [pixel_value | device-width ] ,
+            initial-scale = float_value ,
+            minimum-scale = float_value ,
+            maximum-scale = float_value ,
+            user-scalable = [yes | no] ,
+            target-densitydpi = [dpi_value | device-dpi | high-dpi | medium-dpi | low-dpi]
+        "
+            />
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--保证网页在移动端正常显示-->
+    <link rel="stylesheet" href="../css/sjswork.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link href="../css/DIY.css" rel="stylesheet" type="text/css">
+    <link href="../css/base.css" rel="stylesheet" type="text/css">
+    <link href="../css/bootstrapValidator.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/sjswork.css"/>
+    <link href="../css/navFooter.css" type="text/css" rel="stylesheet">
+    <!--矢量图标引入-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+    <!--IE兼容html5-->
+    <!==[if It IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body ondblclick="ocultar_login_sign_up()">
+<header>
+    <%-include("navHeader.ejs")%>
+</header>
+<section>
+    <div class="container">
+        <div class="row">
+            <div id="sjs_work01" class="col-lg-10">
+                <div id="sjs_ww01" class="col-lg-2">
+                    <h2>HELLO！</h2>
+                    <p>
+                        <%=wook%>
+                    </p>
+                    <span>
+                        <%=nm%>
+                     </span>
+                </div>
+                <img src="../images/personal/<%=tp%>" id="sjs_bok1" class="col-lg-6"/>
+                <img src="../images/personal/<%=tp%>" id="sjs_bok11" class="col-lg-6"/>
+                <div class="clear"></div>
+                <%for(var i=0;i<parseInt(goodsList.length/2);i++){%>
+
+
+            </div>
+              </div>
+            </div>
+    <div id="sjs_work07" class="col-lg-10">
+        <img src="../images/personal/<%=goodsList[2*i].production_print%>">
+        <div id="sjs_work02" class="col-lg-2">
+            <h2>
+                <%=goodsList[2*i].production_name%>
+            </h2>
+            <p>
+                <%=goodsList[2*i].production_text%>
+            </p>
+        </div>
+    </div>
+    <div id="sjs_work03" class="col-lg-10">
+        <div id="sjs_work031" class="col-lg-5">
+            <h2>
+                <%=goodsList[2*i+1].production_name%>
+            </h2>
+            <p>
+                <%=goodsList[2*i+1].production_text%>
+            </p>
+        </div>
+        <img src="../images/personal/<%=goodsList[2*i+1].production_print%>">
+    </div>
+    <%}%>
+</section>
+<div class="clear"></div>
+<%-include("footer.ejs")%>
+<script src="../js/jquery-3.1.1.js"></script>
+<script src="../dist/js/bootstrap.js"></script>
+<script src="../dist/js/bootstrapValidator.js"></script>
+<script src="../js/sjswork.js"></script>
+<script src="../js/navFooter.js"></script>
+
+</body>
+</html>

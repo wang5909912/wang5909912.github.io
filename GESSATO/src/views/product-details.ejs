@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品详情</title>
+    <!--控制IE最新版本-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--保证网页在移动端正常显示-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href=".">
+    <link href="../dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../dist/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/productShow.css"/>
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/owl.carousel.css"/>
+    <link rel="stylesheet" href="../css/font-awesome.min.css"/>
+    <link href="../css/navFooter.css" type="text/css" rel="stylesheet">
+    <!--矢量图标引入-->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+    <!--IE兼容html5-->
+    <!==[if It IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body ondblclick="ocultar_login_sign_up()">
+
+<!--<div class="mfp-bg mfp-ready"></div>-->
+<!--<div class="mfp-wrap mfp-gallery mfp-close-btn-in mfp-auto-cursor mfp-ready zoom zoom-in" tabindex="-1" style="overflow-x: hidden; overflow-y: auto;">-->
+<!--<div class="mfp-container mfp-s-ready mfp-image-holder">-->
+<!--<div class="mfp-content"><div class="mfp-figure">-->
+<!--<button title="关闭（Esc）" type="button" class="mfp-close">-->
+<!--<font><font>×</font></font>-->
+<!--</button>-->
+<!--<figure>-->
+<!--<img class="mfp-img" src="../images/gy_pro1.jpg" style="max-height: 395px;">-->
+<!--<figcaption><div class="mfp-bottom-bar">-->
+<!--<div class="mfp-title"></div>-->
+<!--<div class="mfp-counter"><font><font>6的6</font></font></div>-->
+<!--</div>-->
+<!--</figcaption>-->
+<!--</figure>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="mfp-preloader">-->
+<!--<font><font>载入中...</font></font>-->
+<!--</div>-->
+<!--<button title="上一个（左箭头键）" type="button" class="mfp-arrow mfp-arrow-left mfp-prevent-close"></button>-->
+<!--<button title="下一步（右箭头键）" type="button" class="mfp-arrow mfp-arrow-right mfp-prevent-close"></button>-->
+<!--</div>-->
+<!--</div>-->
+<!-- shop-area start -->
+<%-include("navHeader.ejs")%>
+<div class="container-fluid ps_clear">
+    <div class="row ps_clear">
+        <div class="col-sm-12 clo-md-12 col-lg-12 ps_clear">
+            <div class="contain-swap">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="shop-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-5">
+                <div class="product-zoom">
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="home">
+                            <div class="pro-large-img tb-pic">
+                                <a href="<%=data[0].prd_char%>"><img src="<%=data[0].prd_char%>" rel="<%=data[0].prd_char%>"  class="jqzoom"/></a>
+                                <!--<a class="popup-link" href="../images/gy_pro1.jpg">查看大图 <i class="fa fa-search-plus" aria-hidden="true"></i></a>-->
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="profile">
+                            <div class="pro-large-img">
+                                <img src="<%=data[0].prd_char%>" alt="" />
+                                <!--<a class="popup-link" href="../images/gy_pro2.jpg">查看大图 <i class="fa fa-search-plus" aria-hidden="true"></i></a>-->
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="messages">
+                            <div class="pro-large-img">
+                                <img src="<%=data[0].prd_char%>" alt="" />
+                                <!--<a class="popup-link" href="../images/gy_pro4.jpg">查看大图 <i class="fa fa-search-plus" aria-hidden="true"></i></a>-->
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="settings">
+                            <div class="pro-large-img">
+                                <img src="<%=data[0].prd_char%>" alt="" />
+                                <!--<a class="popup-link" href="../images/gy_pro5.jpg">查看大图 <i class="fa fa-search-plus" aria-hidden="true"></i></a>-->
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="settings2">
+                            <div class="pro-large-img">
+                                <img src="<%=data[0].prd_char%>" alt="" />
+                                <!--<a class="popup-link" href="../images/gy_pro6.jpg">查看大图 <i class="fa fa-search-plus" aria-hidden="true"></i></a>-->
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="settings3">
+                            <div class="pro-large-img">
+                                <img src="<%=data[0].prd_char%>" alt="" />
+                                <!--<a class="popup-link" href="../images/gy_pro7.jpg">查看大图 <i class="fa fa-search-plus" aria-hidden="true"></i></a>-->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Nav tabs -->
+                    <ul class="details-tab owl-carousel owl-theme owl-loaded nav nav-tabs" id="thumblist">
+                        <div class="owl-stage-outer">
+                            <div class="owl-stage" style="transform:translate3d(0px,0px,0px);transition:0s;width:702px;">
+                                <div class="owl-item active" style="width:107px;margin-right:10px;">
+                                    <li class="active">
+                                        <a href="#home" data-toggle="tab" >
+                                            <img src="../images/gy_pro1.jpg" alt="" />
+                                        </a>
+                                    </li>
+                                </div>
+                                <div class="owl-item active" style="width:107px;margin-right:10px;">
+                                    <li class="active">
+                                        <a href="#profile" data-toggle="tab" >
+                                            <img src="../images/gy_pro2.jpg" alt="" />
+                                        </a>
+                                    </li>
+                                </div>
+                                <div class="owl-item active" style="width:107px;margin-right:10px;">
+                                    <li class="active">
+                                        <a href="#messages" data-toggle="tab">
+                                            <img src="../images/gy_pro3.jpg" alt="" />
+                                        </a>
+                                    </li>
+                                </div>
+                                <div class="owl-item active" style="width:107px;margin-right:10px;">
+                                    <li class="active">
+                                        <a href="#settings" data-toggle="tab">
+                                            <img src="../images/gy_pro4.jpg" alt="" />
+                                        </a>
+                                    </li>
+                                </div>
+                                <div class="owl-item" style="width:107px;margin-right:10px;">
+                                    <li class="active">
+                                        <a href="#settings2" data-tosggle="tab">
+                                            <img src="../images/gy_pro5.jpg" alt="" />
+                                        </a>
+                                    </li>
+                                </div>
+                                <div class="owl-item" style="width:107px;margin-right:10px;">
+                                    <li class="active">
+                                        <a href="#settings3" data-toggle="tab">
+                                            <img src="../images/gy_pro6.jpg" alt="" />
+                                        </a>
+                                    </li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-controls">
+                            <div class="owl-nav">
+                                <div class="owl-prev" style="">
+                                    <i class="arrow fa fa-long-arrow-left">&#xe62c;</i>
+                                </div>
+                                <div class="owl-next" style="">
+                                    <i class="arrow fa fa-long-arrow-right">&#xe77b;</i>
+                                </div>
+                            </div>
+                            <div class="owl-dots" style="">
+                                <div class="owl-dot active">
+                                    <span></span>
+                                </div>
+                                <div class="owl-dot">
+                                    <span></span></div>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-7">
+                <div class="product-details">
+                    <h2 class="pro-d-title"><%=data[0].prd_name%></h2>
+                    <div class="pro-ref">
+                        <p>
+                            <label>风格: </label>
+                            <span> <%=data[0].sf_name%></span>
+                        </p>
+                        <p>
+                            <label>厂商: </label>
+                            <span><%=data[0].sup_number%></span>
+                        </p>
+                    </div>
+                    <div class="price-box">
+                        <span class="price product-price">$<%=data[0].prd_money%></span>
+                        <span class="old-price product-price" id="oldPrice">$5200.00</span>
+                    </div>
+                    <div class="short-desc">
+                        <p><%=data[0].prd_text%></p>
+                    </div>
+                    <div class="box-quantity">
+                        <form action="javascript:void(0)">
+                            <label>数量</label>
+                            <input class="goods_number" type="number" value="1" />
+                            <button onclick="addCartInfo(<%=data[0].prd_id%>)">加入购物车</button>
+                        </form>
+                    </div>
+                    <!--<div class="usefull_link_block">-->
+                    <!--<ul>-->
+                    <!--<li><a href="#"><i class="fa fa-envelope-o"></i>寄给朋友</a></li>-->
+                    <!--<li><a href="#"><i class="fa fa-heart-o"></i>加入收藏</a></li>-->
+                    <!--</ul>-->
+                    <!--</div>-->
+                    <div class="select-size">
+                        <form action="#">
+                            <label>尺寸 </label>
+                            <select>
+                                <option value="">5</option>
+                                <option value="">6</option>
+                                <option value="">7</option>
+                                <option value="">8</option>
+                                <option value="">9</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="color-list">
+                        <a href="#"></a>
+                        <a href="#"></a>
+                    </div>
+                    <div class="share-icon">
+                        <a class="twitter" href="#"><i class="fa fa-facebook"></i>  facebook</a>
+                        <a class="facebook" href="#"><i class="fa fa-twitter"></i>  twitter</a>
+                        <a class="google" href="#"><i class="fa fa-google-plus"></i>  linkedin</a>
+                        <a class="pinterest" href="#"><i class="fa fa-pinterest"></i>  facebook</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- shop-area end -->
+<!-- pro-info-area start -->
+<div class="pro-info-area ptb-80">
+    <div class="container">
+        <div class="pro-info-box">
+            <!-- Nav tabs -->
+            <ul class="pro-info-tab" role="tablist">
+                <li class="active"><a href="#home3" data-toggle="tab">更多信息</a></li>
+                <li><a href="#profile3" data-toggle="tab">数据表</a></li>
+                <li><a href="#messages3" data-toggle="tab">评论</a></li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane active" id="home3">
+                    <div class="pro-desc">
+                        <p><%=data[0].prd_more%></p>
+                    </div>
+                </div>
+                <div class="tab-pane" id="profile3">
+                    <div class="pro-desc">
+                        <table class="table-data-sheet">
+                            <tbody>
+                            <tr class="odd">
+                                <td>组合物</td>
+                                <td>木</td>
+                            </tr>
+                            <tr class="even">
+                                <td>样式</td>
+                                <td>休闲</td>
+                            </tr>
+                            <tr class="odd">
+                                <td>厂商</td>
+                                <td>荷兰</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane" id="messages3">
+                    <div class="pro-desc">
+                        <a href="#">成为第一个撰写您的评论！</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- pro-info-area end -->
+<!-- best-sell-area start -->
+
+<!-- best-sell-area end -->
+<!-- best-sell-area start -->
+<div class="best-sell-area ptb-60">
+    <div class="container">
+        <div class="row">
+            <div class="section-title text-center mb-50">
+                <h2>其他同类产品: </h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="product-carousel owl-carousel owl-theme owl-loaded" >
+                <div class="owl-stage-outer">
+                    <div class="owl-stage" style="transform:translate3d(0px,0px,0px);transition:0s;width:2047.5px;" id="similarGoods">
+                        <div class="owl-item active" style="width:292.5px;margin-right:0;">
+                            <div class="col-md-12">
+                                <div class="product-wrapper mb-40 mrg-nn-xs">
+                                    <div class="product-img">
+                                        <a href="#"><img src="../images/gy_pro1.jpg" alt="" /></a>
+                                        <span class="new-label">New</span>
+                                        <div class="product-action">
+                                            <a href="#">
+                                                <span class="iconfont" aria-hidden="true">&#xe6e4;</span>
+                                            </a>
+                                            <a href="#">
+                                                <span class="iconfont" aria-hidden="true">&#xe641;</span>
+                                            </a>
+                                            <a href="#" class="cut-off" data-toggle="modal" data-target="#productModal">
+                                                <span class="iconfont" aria-hidden="true">&#xe60f;</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="pro-title">
+                                            <h3><a href="product-details.html">Cras Neque Metus</a></h3>
+                                        </div>
+                                        <div class="price-reviews">
+                                            <div class="price-box">
+                                                <span class="price product-price">$262.00</span>
+                                                <span class="old-price product-price">$262.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item active" style="width:292.5px;margin-right:0;">
+                            <div class="col-md-12">
+                                <div class="product-wrapper mb-40 mrg-nn-xs">
+                                    <div class="product-img">
+                                        <a href="#"><img src="../images/gy_pro2.jpg" alt="" /></a>
+                                        <span class="new-label">New</span>
+                                        <div class="product-action">
+                                            <a href="#">
+                                                <span class="iconfont" aria-hidden="true">&#xe6e4;</span>
+                                            </a>
+                                            <a href="#">
+                                                <span class="iconfont" aria-hidden="true">&#xe641;</span>
+                                            </a>
+                                            <a href="#" class="cut-off" data-toggle="modal" data-target="#productModal">
+                                                <span class="iconfont" aria-hidden="true">&#xe60f;</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="pro-title">
+                                            <h3><a href="product-details.html">Cras Neque Metus</a></h3>
+                                        </div>
+                                        <div class="price-reviews">
+                                            <div class="price-box">
+                                                <span class="price product-price">$262.00</span>
+                                                <span class="old-price product-price">$262.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item active" style="width:292.5px;margin-right:0;">
+                            <div class="col-md-12">
+                                <div class="product-wrapper mb-40 mrg-nn-xs">
+                                    <div class="product-img">
+                                        <a href="#"><img src="../images/gy_pro3.jpg" alt="" /></a>
+                                        <span class="new-label">New</span>
+                                        <div class="product-action">
+                                            <a href="#">
+                                                <span class="iconfont" aria-hidden="true">&#xe6e4;</span>
+                                            </a>
+                                            <a href="#">
+                                                <span class="iconfont" aria-hidden="true">&#xe641;</span>
+                                            </a>
+                                            <a href="#" class="cut-off" data-toggle="modal" data-target="#productModal">
+                                                <span class="iconfont" aria-hidden="true">&#xe60f;</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="pro-title">
+                                            <h3><a href="product-details.html">Cras Neque Metus</a></h3>
+                                        </div>
+                                        <div class="price-reviews">
+                                            <div class="price-box">
+                                                <span class="price product-price">$262.00</span>
+                                                <span class="old-price product-price">$262.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item active" style="width:292.5px;margin-right:0;">
+                            <div class="col-md-12">
+                                <div class="product-wrapper mb-40 mrg-nn-xs">
+                                    <div class="product-img">
+                                        <a href="#"><img src="../images/gy_pro5.jpg" alt="" /></a>
+                                        <span class="new-label">New</span>
+                                        <div class="product-action">
+                                            <a href="#">
+                                                <span class="iconfont" aria-hidden="true">&#xe6e4;</span>
+                                            </a>
+                                            <a href="#">
+                                                <span class="iconfont" aria-hidden="true">&#xe641;</span>
+                                            </a>
+                                            <a href="#" class="cut-off" data-toggle="modal" data-target="#productModal">
+                                                <span class="iconfont" aria-hidden="true">&#xe60f;</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="pro-title">
+                                            <h3><a href="product-details.html">Cras Neque Metus</a></h3>
+                                        </div>
+                                        <div class="price-reviews">
+                                            <div class="price-box">
+                                                <span class="price product-price">$262.00</span>
+                                                <span class="old-price product-price">$262.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item" style="width:292.5px;margin-right:0;">
+                            <div class="col-md-12">
+                                <div class="product-wrapper mb-40 mrg-nn-xs">
+                                    <div class="product-img">
+                                        <a href="#"><img src="../images/gy_pro7.jpg" alt="" /></a>
+                                        <span class="new-label">New</span>
+                                        <div class="product-action">
+                                            <a href="#"><i class="pe-7s-cart"></i></a>
+                                            <a href="#"><i class="pe-7s-like"></i></a>
+                                            <a href="#"><i class="pe-7s-folder"></i></a>
+                                            <a href="#" data-toggle="modal" data-target="#productModal"><i class="pe-7s-look"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="pro-title">
+                                            <h3><a href="product-details.html">Cras Neque Metus</a></h3>
+                                        </div>
+                                        <div class="price-reviews">
+                                            <div class="price-box">
+                                                <span class="price product-price">$262.00</span>
+                                                <span class="old-price product-price">$262.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item" style="width:292.5px;margin-right:0;">
+                            <div class="col-md-12">
+                                <div class="product-wrapper mb-40 mrg-nn-xs">
+                                    <div class="product-img">
+                                        <a href="#"><img src="../images/gy_pro8.jpg" alt="" /></a>
+                                        <span class="new-label">New</span>
+                                        <div class="product-action">
+                                            <a href="#"><i class="pe-7s-cart"></i></a>
+                                            <a href="#"><i class="pe-7s-like"></i></a>
+                                            <a href="#"><i class="pe-7s-folder"></i></a>
+                                            <a href="#" data-toggle="modal" data-target="#productModal"><i class="pe-7s-look"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-content">
+                                        <div class="pro-title">
+                                            <h3><a href="product-details.html">Cras Neque Metus</a></h3>
+                                        </div>
+                                        <div class="price-reviews">
+                                            <div class="price-box">
+                                                <span class="price product-price">$262.00</span>
+                                                <span class="old-price product-price">$262.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-controls">
+                    <div class="owl-nav">
+                        <div class="owl-prev" style="">
+                            <i class="arrow"></i>
+                        </div>
+                        <div class="owl-next" style="">
+                            <i class="fa fa-long-arrow-right"></i>
+                        </div>
+                        <div class="owl-dots" style="">
+                            <div class="owl-dot active">
+                                <span></span></div>
+                            <div class="owl-dot">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!--********************************模态框************************************-->
+
+                <div class="modal fade in" id="productModal" tabindex="-1" role="dialog" >
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">x</span></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="modal-img">
+                                    <a href="#"><img src="../images/gy_pro1.jpg" alt=""></a>
+                                </div>
+                                <div class="modal-pro-content">
+                                    <h3><a href="#">商品名称</a></h3>
+                                    <div class="price">
+                                        <span>$70.00</span>
+                                        <span class="old">$80.11</span>
+                                    </div>
+                                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet.</p>
+                                    <form action="javascript:void(0)">
+                                        <input class="goods_number" type="number" value="1">
+                                        <button   class="cart-car">加入购物车</button>
+                                    </form>
+                                    <div class="product_meta">
+                                        <span class="posted_in"><font><font>分类：</font></font><a rel="tag" href="#"><font><font>家居</font></font></a><font><font>，</font></font><a rel="tag" href="#"><font><font>简约</font></font></a></span> <span class="tagged_as"><font><font>标签：</font></font><a rel="tag" href="#"><font><font>家居</font></font></a><font><font>，</font></font><a rel="tag" href="#"><font><font>简约</font></font></a></span>
+                                    </div>
+                                    <div class="social">
+                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                                        <a href="#"><i class="fa fa-instagram"></i></a>
+                                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- best-sell-area end -->
+<%-include("footer.ejs")%>
+
+<script src="../js/jquery-3.1.1.js"></script>
+<script src="../js/jquery.imgbox.pack.js"></script>
+<script src="../dist/js/bootstrap.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<script src="../js/show.js"></script>
+<script src="../js/ajax.js"></script>
+<script src="../js/owl.carousel.min.js"></script>
+<script src="../js/jquery.imagezoom.min.js"></script>
+<script src="../js/navFooter.js"></script>
+
+<script>
+    window.onload=function(){
+        prdId=<%=data[0].prd_id%>;
+        similarGoods(prdId);
+        oldPrice(prdId);
+    }
+</script>
+</body>
+</html>

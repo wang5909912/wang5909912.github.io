@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "微软雅黑";
+}
+.cartCss {
+  background: none;
+}
+.cart-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.cart-bg img {
+  width: 100%;
+  height: auto;
+  opacity: 0.2;
+}
+.cartCss header {
+  width: 100%;
+  height: 80px;
+  background: gray;
+}
+.cart-message {
+  margin-left: 19%;
+  width: 62%;
+  margin-top: 5%;
+  height: auto;
+  /*第一行商品信息*/
+}
+.cart-message > .cart-cart {
+  margin-bottom: 7%;
+  font-size: 1.33vw;
+}
+.cart-message > .cart-first {
+  text-align: center;
+  border-bottom: 1px solid #cecece;
+}
+.cart-message > .cart-first .cart-goodsMessage {
+  margin-left: 2%;
+}
+.cart-message > .cart-first .cart-messageEdit {
+  margin-right:3%;
+}
+.cart-message > .cart-first .cart-goodsSale {
+  margin: 0 1.5%;
+}
+.cart-message > .cart-first .cart-goodsNum {
+  margin-right: 2%;
+}
+.cart-message > .cart-first > p {
+  padding: 0;
+  margin-bottom: 2%;
+}
+.cart-message > .cart-information {
+  border-bottom: 1px solid #cecece;
+  position: relative;
+  /*图片*/
+  /*描述信息*/
+  /*修改信息*/
+  /*删除图标 绝对定位*/
+}
+.cart-message > .cart-information > img {
+  margin: 2.5% 0;
+  height: 16.3vh;
+  vertical-align: middle;
+}
+.cart-message > .cart-information .cart-goodsMessage {
+  margin-left: 2%;
+}
+.cart-message > .cart-information .cart-messageEdit {
+  position: relative;
+  text-align: center;
+  margin-right: 3%;
+  /*padding: 10.2% 0;*/
+}
+.cart-message > .cart-information .cart-messageEdit > span:hover {
+  cursor: pointer;
+  color: #fc6;
+  font-weight: bold;
+}
+.cart-message > .cart-information .cart-messageEdit .cart-edit {
+  position: absolute;
+  width: 38vw;
+  left: -5vw;
+  top: 12.3vh;
+  z-index: 9;
+  text-align: center;
+  border: 1px solid #333333;
+  background: white;
+}
+.cart-message > .cart-information .cart-messageEdit .cart-edit > div > div {
+  position: relative;
+}
+.cart-message > .cart-information .cart-messageEdit .cart-edit > div > div .cart-edit-del {
+  display: inline-block;
+  position: absolute;
+  right: 1vw;
+}
+.cart-message > .cart-information .cart-messageEdit .cart-edit > div > div .cart-edit-del:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+.cart-message > .cart-information .cart-messageEdit .cart-edit > div > div > img {
+  width: 30.4%;
+  margin: 4% 4.8%;
+  display: inline-block;
+}
+.cart-message > .cart-information .cart-messageEdit .cart-edit > div > div > div {
+  text-align: left;
+  display: inline-block;
+  margin-top: 4%;
+}
+.cart-message > .cart-information .cart-messageEdit .cart-edit > div > div > div > p:first-child {
+  font-size: 1.33vw;
+  padding-bottom: 4%;
+}
+.cart-message > .cart-information .cart-messageEdit .cart-edit > div > div > div > p:nth-child(2) {
+  font-size: 1vw;
+  color: rgba(38, 43, 45, 0.5);
+  padding-bottom: 4%;
+}
+.cart-message > .cart-information .cart-messageEdit .cart-edit > div > div > div > p:nth-child(3) {
+  padding-bottom: 12%;
+  font-size: 1vw;
+}
+.cart-message > .cart-information .cart-messageEdit .cart-edit > div > div > div > p:nth-child(3) span:nth-child(1) {
+  text-align: justify;
+  display: inline-block;
+}
+.cart-message > .cart-information .cart-messageEdit .cart-edit > div > div > div > p:nth-child(3) .cart-edit-color {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  border: 1px solid silver;
+  margin-left: 2%;
+  width: 1.85vw;
+  height: 3.9vh;
+}
+.cart-message > .cart-information .cart-messageEdit .cart-edit > div > div > div > p:nth-child(3) .cart-edit-color:hover {
+  border: 1px solid #fc6;
+  cursor: pointer;
+}
+.cart-message > .cart-information .cart-messageEdit .cart-edit > div > div > div > p:nth-child(3) .cart-edit-color img {
+  display: inline-block;
+  width: 1.23vw;
+  height: 2.6vh;
+}
+.cart-message > .cart-information .cart-messageEdit .cart-edit > div > div > div > div {
+  font-size: 1vw;
+  background: #333333;
+  color: white;
+  border-radius: 3px;
+  padding-top: 2.6%;
+  padding-bottom: 2.6%;
+  text-align: center;
+  border: 1px solid #333333;
+  margin: 8% 0 8%;
+}
+#cart_active{
+  outline: 2px solid #fc6;
+  border: 1px solid #fc6;
+}
+.cart-message > .cart-information .cart-messageEdit .cart-edit > div > div > div > div:hover {
+  color: #333333;
+  background-color: white;
+  cursor: pointer;
+}
+.cart-message > .cart-information .cart-goodsSale {
+  margin: 0 1.5%;
+}
+.cart-message > .cart-information > p {
+  font-size: 1vw;
+  text-align: center;
+  margin: auto 0;
+  padding: 7.4% 0;
+}
+.cart-message > .cart-information > p .iconfont {
+  display: inline-block;
+  font-size: 1vw;
+}
+.cart-message > .cart-information > .cart-delete {
+  position: absolute;
+  right: 1%;
+  top: 0;
+}
+.cart-message > .cart-information > .cart-delete:hover {
+  cursor: pointer;
+}
+.cart-message > .cart-information > .cart-delete .iconfont {
+  display: inline-block;
+  font-size: 1.5vw;
+  padding: 0 0;
+}
+.cart-message > .cart-information > .cart-goodsNum {
+  margin-right: 2%;
+}
+.cart-message > .cart-information > .cart-goodsNum > span {
+  border: 1px solid #333333;
+  display: inline-block;
+  width: 60%;
+}
+.cart-message > .cart-information > .cart-goodsNum > span > span:first-child {
+  display: inline-block;
+  margin: 0;
+  border-right: 1px solid #333333;
+}
+.cart-message > .cart-information > .cart-goodsNum > span > span:first-child:hover {
+  cursor: pointer;
+  background: #333;
+  /*background: #fc6;*/
+  color: white;
+}
+.cart-message > .cart-information > .cart-goodsNum > span > span:last-child {
+  display: inline-block;
+  margin: 0;
+  border-left: 1px solid #333333;
+}
+.cart-message > .cart-information > .cart-goodsNum > span > span:last-child:hover {
+  cursor: pointer;
+  background: #333;
+  /*background: #fc6;*/
+  color: white;
+}
+.cart-message > .cart-information > .cart-goodsNum > span .cart-num {
+  border: none;
+}
+.cart-message > .cart-countDiv .cart-count {
+  border-bottom: 1px solid #cecece;
+  margin-bottom: 4.8%;
+}
+.cart-message > .cart-countDiv .cart-count p {
+  margin-top: 22%;
+  margin-bottom: 8%;
+  font-size: 1.33vw;
+}
+.cart-message > .cart-countDiv .cart-count .cart-countAll {
+  text-align: right;
+  float: right;
+}
+.cart-message > .cart-sub {
+  font-size: 1vw;
+}
+.cart-message > .cart-sub p {
+  margin-top: 3.7%;
+}
+.cart-message > .cart-sub p:hover {
+  cursor: pointer;
+}
+.cart-message > .cart-sub div {
+  float: right;
+  display: inline-block;
+  padding-top: 3.7%;
+  padding-bottom: 3.7%;
+  margin-bottom: 20%;
+  text-align: center;
+  width: 48%;
+  color: white;
+  background-color: #333333;
+  border-radius: 3px;
+  border: 1px solid #333333;
+}
+.cart-message > .cart-sub div:hover {
+  color: #333333;
+  background-color: white;
+  cursor: pointer;
+}
